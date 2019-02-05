@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chiba Weather</title>
+    <link rel="stylesheet" href="static/weather.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <h1>天気予報（千葉県北西部）</h1>
+        </div>
+    </div>
+    <div class="main">
+        <h2 class="main-title">{{ weather }}</h2>
+        <div class="top">
+            <div class="main-top">
+                <img class="main-image" src={{ weather_img }} alt={{ img_title }}>
+                <h3 class="main-image-title">{{ img_title }}</h3>
+            </div>
+            <div class="main-right">
+                <div class="temp-wrapper">
+                    <div class="temp" id="max">
+                        <h4 class="temp-text">最高</h4>
+                        <p><span class="value">{{ tem_max }}</span><span class="unit">℃</span></p>
+                    </div>
+                    <div class="temp" id="min">
+                        <h4 class="temp-text">最低</h4>
+                        <p><span class="value">{{ tem_min }}</span><span class="unit">℃</span></p>
+                    </div>
+                </div>
+                <div class="rain-table">
+                    <table border="1" width="100%">
+                        <tr>
+                            <th>時間</th>
+                            <th>00-06</th>
+                            <th>06-12</th>
+                            <th>12-18</th>
+                            <th>18-24</th>
+                        </tr>
+                        <tr class="rain-per">
+                            <th>降水確率</th>
+                            <td align="center">{{ rain_0_6 }}</td>
+                            <td align="center">{{ rain_6_12 }}</td>
+                            <td align="center">{{ rain_12_18 }}</td>
+                            <td align="center">{{ rain_18_24 }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="fashion">
+            <img class="fashion-image" src={{ fashion_img }} alt="超寒い">
+            <p class="fashion-text">
+                {{ fashion_text1 }}<br>
+                {{ fashion_text2 }}
+            </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

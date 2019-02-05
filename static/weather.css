@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.header{
+    height: 56px;
+    width: 100%;
+    box-shadow: 0 0 5px black;
+    background-image: url(img/sora.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-left h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: black;
+}
+.main{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+}
+.top{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-title{
+    padding-left: 30px;
+    padding-top: 60px;
+    font-size: 25px;
+}
+.main-top{
+    margin-top: 70px;
+    margin-left: 30px;
+    width: 300px;
+    text-align: center;
+}
+.main-image{
+    width: 100%;
+}
+.main-right{
+    width: 400px;
+    margin-top: 70px;
+}
+.temp-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.temp{
+    width: 50%;
+    text-align: center;
+}
+#max{
+    color: deeppink;
+}
+#min{
+    color: deepskyblue;
+}
+.value{
+    font-size: 30px;
+}
+.fashion{
+    text-align: center;
+    padding-left: 40px;
+}
+.fashion-image{
+    width: 250px;
+}
+.fashion-text{
+    font-weight: bold;
+}
+
+
+
