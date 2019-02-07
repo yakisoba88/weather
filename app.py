@@ -89,11 +89,7 @@ elif 20 < temp_ave <= 25:
 elif temp_ave > 25:
     fashion_img, fashion_text1, fashion_text2 = fashion_dic["25-"]
 
-"""スクレイピング時間取得"""
-now = datetime.now()
-now_day = now.strftime("%Y/%m/%d")
-now_min = now.strftime("%H:%M")
-get_time = "（" + now_day + " " + now_min + " " + "取得）"
+
 
 
 """
@@ -103,7 +99,13 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
+def weather():
+    """スクレイピング時間取得"""
+    now = datetime.now()
+    now_day = now.strftime("%Y/%m/%d")
+    now_min = now.strftime("%H:%M")
+    get_time = "（" + now_day + " " + now_min + " " + "取得）"
+
     return render_template("weather_today.html",
                            weather_img=weather_top_img,
                            img_title=img_title,
