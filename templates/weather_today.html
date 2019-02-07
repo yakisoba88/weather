@@ -10,12 +10,10 @@
     <div class="header">
         <div class="header-title">
             <h1>天気予報（千葉県北西部）</h1>
-            <p class="get-time">{{ get_time }}</p>
-            <div class="clear"></div>
         </div>
     </div>
     <div class="main">
-        <h2 class="main-title">{{ weather }}</h2>
+        <h2 class="main-title">{{ weather }} {{ get_time }}</h2>
         <div class="top">
             <div class="main-top">
                 <img class="main-image" src={{ weather_img }} alt={{ img_title }}>

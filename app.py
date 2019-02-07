@@ -93,7 +93,7 @@ elif temp_ave > 25:
 now = datetime.now()
 now_day = now.strftime("%Y/%m/%d")
 now_min = now.strftime("%H:%M")
-get_time = "情報：" + now_day + " " + now_min + " " + "取得"
+get_time = "（" + now_day + " " + now_min + " " + "取得）"
 
 
 """
