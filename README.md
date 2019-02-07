@@ -4,7 +4,7 @@
 
 気象庁の千葉県の天気予報ページからpythonのスクレイピングを用いて、天気情報を抽出しています。(https://www.jma.go.jp/jma/index.html)  
 抽出したデータはpythonのwebフレームワーク「Flask」を用いて、webサイトとして表示しています。  
-@webサイトのURL:
+@webサイトのURL:  https://yakisoba88-weather.herokuapp.com/
 
 サーバーはHerokuを用いました。
 
