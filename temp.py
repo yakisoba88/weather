@@ -22,6 +22,7 @@ for tr_mtx in soup.select("tr.mtx"):
     if tr_mtx.find_all('td', style='white-space:nowrap', string='千葉市中央区'):
         tem_min = tr_mtx.select('td[style="text-align:right;white-space:nowrap;"]')[0].text.strip()
         tem_min = tem_min.replace(" ]", "")
+        tem_min = tem_min.replace(")", "")
 
 # アクセス間隔を数秒あける
 time.sleep(1)
@@ -38,6 +39,7 @@ for tr_mtx in soup.select("tr.mtx"):
     if tr_mtx.find_all('td', style='white-space:nowrap', string='千葉市中央区'):
         tem_max = tr_mtx.select('td[style="text-align:right;white-space:nowrap;"]')[0].text.strip()
         tem_max = tem_max.replace(" ]", "")
+        tem_max = tem_max.replace(")", "")
 
 
 
