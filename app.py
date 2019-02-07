@@ -20,7 +20,7 @@ table_forecast = soup.select("table.forecast")[0]
 weather_img = {
     "晴れ時々曇り": "static/img/101.png",
     "晴れ": "static/img/100.png",
-    "晴れ後曇り": "static/img/707.png",
+    "晴れ後曇り": "static/img/101.png",
     "曇り": "static/img/200.png",
     "晴れ一時雨": "static/img/102.png",
     "曇り一時雨": "static/img/212.png",
