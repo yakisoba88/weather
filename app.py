@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 from flask import Flask, render_template
 import requests
 from temp import tem_min, tem_max  # ファイルから変数のimport
+from datetime import datetime
+
 
 """
 スクレイピング
@@ -87,6 +89,12 @@ elif 20 < temp_ave <= 25:
 elif temp_ave > 25:
     fashion_img, fashion_text1, fashion_text2 = fashion_dic["25-"]
 
+"""スクレイピング時間取得"""
+now = datetime.now()
+now_day = now.strftime("%Y/%m/%d")
+now_min = now.strftime("%H:%M")
+get_time = "情報：" + now_day + " " + now_min + " " + "取得"
+
 
 """
 Flaskの部分
@@ -108,7 +116,8 @@ def hello_world():
                            rain_18_24=rain_per_18_24,
                            fashion_img=fashion_img,
                            fashion_text1=fashion_text1,
-                           fashion_text2=fashion_text2
+                           fashion_text2=fashion_text2,
+                           get_time=get_time
                            )
 
 
