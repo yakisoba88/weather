@@ -27,6 +27,7 @@ def weather_index():
         "晴れ一時雨": "static/img/102.png",
         "曇り一時雨": "static/img/212.png",
         "曇り後雨": "static/img/212.png",
+        "曇り後晴れ": "static/img/201.png",
         "雨後曇り": "static/img/313.png",
         "曇り時々晴れ": "static/img/201.png",
         "雨": "static/img/300.png",
