@@ -31,7 +31,9 @@ def weather_index():
         "雨後曇り": "static/img/313.png",
         "曇り時々晴れ": "static/img/201.png",
         "雨": "static/img/300.png",
-        "雪": "static/img/400.png"
+        "雪": "static/img/400.png",
+        "晴れ後一時雨": "static/img/102.png",
+        "曇り後一時雨": "static/img/212.png"
     }
     count = 0  # カウント変数
     # trタグ取得
